@@ -1,0 +1,133 @@
+﻿Creature,Type,CR,Treasure,XP,NPC Gear
+aasimar,NPC,1/2,NPC,200,"scale mail, heavy mace, light crossbow, crossbow bolts (10), other"
+aboleth,aberration,7,double,3200,other
+astral deva,outsider,14,double,38400,"+2 disrupting warhammer, other"
+planetar,outsider,16,double,76800,"+3 holy greatsword, other"
+solar,outsider,23,double,819200,"+5 full plate, +5 dancing greatsword, +5 composite longbow [+9 Str bonus], other"
+animated object,construct,3,none,800,
+ankheg,magical beast,3,incidental,800,other
+giant ant,vermin,2,none,600,
+army ant swarm,vermin,5,none,1600,
+gorilla,animal,2,none,600,
+gigantopithecus,animal,3,incidental,800,other
+hound archon,outsider,4,standard,1200,"masterwork greatsword, other"
+lantern archon,outsider,2,none,600,
+trumpet archon,outsider,14,standard,38400,other
+assassin vine,plant,3,incidental,800,other
+bralani,outsider,6,double,2400,"+1 scimitar, +1 composite longbow [+5 Str bonus], other"
+ghaele,outsider,13,triple,25600,"+2 holy greatsword, other"
+lillend,outsider,7,standard,3200,"+1 longsword, masterwork harp, other"
+barghest,outsider,4,standard,1200,other
+greater barghest,outsider,7,standard,3200,other
+basidirond,plant,5,incidental,1600,other
+basilisk,magical beast,5,incidental,1600,other
+dire bat,animal,2,incidental,600,other
+bat swarm,animal,2,none,600,
+grizzly bear,animal,4,none,1200,
+dire bear,animal,7,incidental,3200,other
+bebilith,outsider,10,standard,9600,other
+fire beetle,vermin,1/3,none,135,
+giant stag beetle,vermin,4,none,1200,
+behir,magical beast,8,double,4800,other
+black pudding,ooze,7,none,3200,
+boar,animal,2,none,600,
+daeodon,animal,4,none,1200,
+boggard,NPC,2,NPC,600,"leather armour, morningstar, other"
+bugbear,NPC,2,NPC,600,"leather armour, light wooden shield, morningstar, javelins (3), other"
+bulette,magical beast,7,none,3200,
+cheetah,animal,2,none,600,
+leopard,animal,2,none,600,
+cave fisher,vermin,2,none,600,
+centaur,monstrous humanoid,3,standard,800,"breastplate, heavy steel shield, longsword, spear, other"
+giant centipede,vermin,1/2,none,200,
+centipede swarm,vermin,4,none,1200,
+chimera,magical beast,7,standard,3200,other
+choker,aberration,2,standard,600,other
+chuul,aberration,7,standard,3200,other
+cloaker,aberration,5,standard,1600,other
+cockatrice,magical beast,3,none,800,
+couatl,outsider,10,standard,9600,other
+giant crab,vermin,2,none,600,
+crab swarm,vermin,4,none,1200,
+crocodile,animal,2,none,600,
+dire crocodile,animal,9,none,6400,
+cyclops,humanoid,5,standard,1600,"hide armour, Large greataxe, Large heavy crossbow, other"
+dark creeper,humanoid,2,standard,600,"dagger, black smear poison [3 doses], other"
+dark stalker,NPC,4,NPC,1200,"leather armour, short sword (2), black smear poison [6 doses], other"
+darkmantle,magical beast,1,none,400,
+babau,outsider,6,standard,2400,"longspear, other"
+balor,outsider,20,standard,307200,"+1 unholy longsword, +1 flaming whip, other"
+dretch,outsider,2,none,600,
+glabrezu,outsider,13,standard,25600,other
+hezrou,outsider,11,standard,12800,other
+marilith,outsider,17,double,102400,"masterwork longsword (6), other"
+nabasu,outsider,8,standard,4800,other
+nalfeshnee,outsider,14,standard,38400,other
+quasit,outsider,2,standard,600,other
+shadow demon,outsider,7,standard,3200,other
+succubus,outsider,7,double,3200,other
+vrock,outsider,9,standard,6400,other
+derro,NPC,3,NPC,800,"leather armour, short sword, repeating light crossbow, poisoned crossbow bolts (10), other"
+hamatula,outsider,11,standard,12800,other
+barbazu,outsider,5,standard,1600,"glaive, other"
+osyluth,outsider,9,standard,6400,other
+erinyes,outsider,8,triple,4800,"+1 longsword, +1 flaming composite longbow [+5 Str bonus], rope, other"
+cornugon,outsider,16,standard,76800,"+1 unholy spiked chain, other"
+gelugon,outsider,13,standard,25600,"+1 frost spear, other"
+imp,outsider,2,standard,600,other
+lemure,outsider,1,none,400,
+pit fiend,outsider,20,double,307200,other
+devourer,undead,11,standard,12800,other
+ankylosaurus,animal,6,none,2400,
+brachiosaurus,animal,10,none,9600,
+deinonychus,animal,3,none,800,
+elasmosaurus,animal,7,none,3200,
+pteranodon,animal,3,none,800,
+stegosaurus,animal,7,none,3200,
+triceratops,animal,8,none,4800,
+tyrannosaurus,animal,9,none,6400,
+dog,animal,1/3,none,135,
+riding dog,animal,1,none,400,
+dolphin,animal,1/2,none,200,
+orca,animal,5,none,1600,
+doppelganger,NPC,3,NPC,800,other
+black dragon,dragon,3,triple,800,dragon
+blue dragon,dragon,5,triple,1600,dragon
+green dragon,dragon,4,triple,1200,dragon
+red dragon,dragon,6,triple,2400,dragon
+white dragon,dragon,2,triple,600,dragon
+brass dragon,dragon,3,triple,800,dragon
+bronze dragon,dragon,5,triple,1600,dragon
+copper dragon,dragon,4,triple,1200,dragon
+gold dragon,dragon,7,triple,3200,dragon
+silver dragon,dragon,6,triple,2400,dragon
+dragon turtle,dragon,9,double,6400,other
+drider,aberration,7,double,3200,"masterwork heavy mace, masterwork composite longbow [+2 Str bonus], arrows (20), other"
+deep elf,NPC,1/3,NPC,135,"leather armour, light steel shield, rapier, hand crossbow, crossbow bolts (20), deep elf poison [2 doses], 3d6 gp, other"
+drow noble,NPC,3,NPC,800,"masterwork breastplate, heavy steel shield, masterwork rapier, deep elf poison [4 doses], potion of invisibility, wand of cure light wounds [CL 1, 20 charges], 400 gp, other"
+dryad,fey,3,standard,800,"dagger, masterwork longbow, arrows (20), other"
+duergar,NPC,1/3,NPC,135,"chainmail, heavy steel shield, warhammer, light crossbow, crossbow bolts (20), 3d6 gp, other"
+eagle,animal,1/2,none,200,
+giant eagle,animal,3,none,800,
+electric eel,animal,2,none,600,
+moray eel,animal,5,none,1600,
+air elemental,elemental,1,none,400,elemental
+earth elemental,elemental,1,none,400,elemental
+fire elemental,elemental,1,none,400,elemental
+water elemental,elemental,1,none,400,elemental
+elephant,animal,7,none,3200,
+mastodon,animal,9,none,6400,
+ettercap,aberration,3,standard,800,other
+ettin,humanoid,6,standard,2400,"leather armour, flail (2), javelins (4), other"
+bat,animal,1/8,none,50,
+cat,animal,1/4,none,100,
+hawk,animal,1/3,none,135,
+lizard,animal,1/6,none,65,
+monkey,animal,1/4,none,100,
+owl,animal,1/3,none,135,
+rat,animal,1/4,none,100,
+raven,animal,1/6,none,65,
+toad,animal,1/8,none,50,
+viper,animal,1/2,none,200,
+weasel,animal,1/2,none,200,
+giant flytrap,plant,10,incidental,9600,other
