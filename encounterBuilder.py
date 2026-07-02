@@ -1,7 +1,7 @@
 from creatures import Creature
 from fileProcessor import ProcessCreatures, ReadTable
 
-def EncounterBuilder(quantity: int = 1000) -> list[Creature]:
+def EncounterBuilder(quantity: int = 1000, pace: str = "medium") -> list[Creature]:
     encounter = []
     lookup = ProcessCreatures(ReadTable("creatures.csv"))
 
@@ -28,7 +28,7 @@ def EncounterBuilder(quantity: int = 1000) -> list[Creature]:
                     quantity = int(input())
         else:
             quantity -= creature_amt
-        new_creature = Creature(creature, creature_amt, lookup)
+        new_creature = Creature(creature, creature_amt, lookup, pace)
         encounter.append(new_creature)
 
     return encounter

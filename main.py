@@ -5,10 +5,9 @@ from encounter import Encounter
 #Main working loop. 
 def main():
     #Handles cases for each type of input arguments
-    encounter = Encounter(EncounterArgs(sys.argv))
+    creatures = EncounterArgs(sys.argv)
+    encounter = Encounter(creatures)
     print(encounter)
-    
-    
     return
 
 main()

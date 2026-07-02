@@ -1,8 +1,66 @@
 from getSpecialTypes import GetDragon, GetElemental
-from fileProcessor import ReadTable
+from fileProcessor import ReadTable, ReadFile
+
+def FindBinIndex(value, list):
+    bin_found = False
+    index = 0
+    while not bin_found:
+        check_val = int(list[index])
+        if value == check_val:
+            return index
+        if value < check_val:
+            return index - 1
+        index += 1
+
+def CalcValue(xp, pace = "medium"):
+    treasure_lookup = ReadTable("Treasure_by_XPTotal.csv", "c")
+    xp_list = treasure_lookup[0]
+    slow_list = treasure_lookup[1]
+    medium_list = treasure_lookup[2]
+    fast_list = treasure_lookup[3]
+    bin_index = FindBinIndex(xp, xp_list)
+    match pace:
+        case "slow":
+            value = int(slow_list[bin_index])
+        case "medium":
+            value = int(medium_list[bin_index])
+        case "fast":
+            value = int(fast_list[bin_index])
+        case default:
+            print("Unexpected pace entry, assuming medium...")
+            value = int(medium_list[bin_index])
+    return value
+
+def NPCValue(CR, NPC_type = "basic"):
+    treasure_lookup = ReadTable("NPC_Treasure.csv", "c")
+    cr_list = treasure_lookup[0]
+    hero_list = treasure_lookup[1]
+    gp_list = treasure_lookup[2]
+    match NPC_type:
+        case "basic":
+            bin_index = FindBinIndex(CR, cr_list)
+            value = int(gp_list[bin_index])
+        case "heroic":
+            bin_index = FindBinIndex(CR, hero_list)
+            value = int(gp_list[bin_index])
+        case default:
+            print("Unexpected NPC type, assuming basic...\n")
+            bin_index = FindBinIndex(CR, cr_list)
+            value = int(gp_list[bin_index])
+    return value
+
+def CheckType(name):
+    types = ReadFile("creature_types.txt")
+    valid_type = False
+    while not valid_type:
+        if name in types:
+            return name
+        else:
+            print("Not a valid type, please enter a valid type\n")
+            name = input().lower()
 
 class Creature:
-    def __init__(self, name: str, quantity: int = 1, lookup: list = None) -> None:
+    def __init__(self, name: str, quantity: int = 1, lookup: list = None, pace: str = "Medium") -> None:
         self.name = name
         self.quantity = int(quantity)
         if lookup: #If a lookup table is given, it references it to find the appropriate values
@@ -44,7 +102,7 @@ class Creature:
             else:
                 creature_found = False
                 i = 0
-                while not creature_found:
+                while not creature_found and i < len(lookup):
                     creature = lookup[i]
                     if self.name == creature.name:
                         self.type = creature.type
@@ -54,11 +112,41 @@ class Creature:
                         self.treasure_default = creature.treasure_default
                         creature_found = True
                     i += 1
-                    if i > len(lookup):
-                        raise LookupError(f"Could not find {self.name} in bestiary")
+                if not creature_found:
+                    print(f"Could not find {self.name} in bestiary\nAre they an NPC? (Y/N)\n")
+                    if input().lower() == "N":
+                        raise ValueError("Creature Name not valid and not an NPC")
+                    else:
+                        print("What type of creature is the NPC?\n")
+                        self.type = CheckType(input().lower())
+                        print("What level is the NPC?\n")
+                        cr = input()
+                        while not cr.isdigit():
+                            print("That was not a number, please enter a valid cr\n")
+                            cr = input()
+                        self.cr = int(cr)
+                        self.treasure = "NPC"
+                        xp_lookup = ReadTable("XP_by_CR.csv", "c")
+                        self.xp = int(xp_lookup[1][xp_lookup[0].index(f"{self.cr}")])
+                        self.treasure_default = "other"
+            match self.treasure:
+                case "none":
+                    self.value = 0
+                case "incidental":
+                    self.value = CalcValue(self.xp, pace) / 2
+                case "standard":
+                    self.value = CalcValue(self.xp, pace)
+                case "double":
+                    self.value = CalcValue(self.xp, pace) * 2
+                case "triple":
+                    self.value = CalcValue(self.xp, pace) * 3
+                case "NPC":
+                    print("Creature is an NPC, are they basic or heroic?\n")
+                    NPC_type = input().lower()
+                    self.value = NPCValue(self.cr, NPC_type)
 
     def __repr__(self) -> str:
-        return f"Creature({self.name}, {self.quantity}, CR{self.cr}, {self.xp}XP)"
+        return f"Creature({self.name}, {self.quantity}, CR{self.cr}, {self.xp}XP, dropping treasure equivalent to {self.value} gp)"
 
 class LookupCreature(Creature):
     def __init__(self, name: str, type: str, cr: str, treasure: str, xp: int, treasure_default: list[str]) -> None:
