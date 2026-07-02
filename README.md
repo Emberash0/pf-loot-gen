@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# pf-loot-gen
+# PF1E LOOT GEN
 A Loot Generator for Pathfinder First Edition
 =======
 # Pathfinder First Edition Loot Generator
