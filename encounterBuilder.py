@@ -1,10 +1,7 @@
 from creatures import Creature
-from fileProcessor import ProcessCreatures, ReadTable
 
-def EncounterBuilder(quantity: int = 1000, pace: str = "medium") -> list[Creature]:
+def EncounterBuilder(quantity: int = 1000, pace: str = "medium", lookup = None) -> list[Creature]:
     encounter = []
-    lookup = ProcessCreatures(ReadTable("creatures.csv"))
-
     #Until no creatures remain
     while quantity > 0:
         print("Please enter the next creature in the encounter. If no more, enter 'n'\n")

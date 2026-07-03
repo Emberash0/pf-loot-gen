@@ -147,7 +147,7 @@ class Creature:
                 case "triple":
                     self.value = CalcValue(self.xp, pace) * 3
                 case "NPC":
-                    print("Creature is an NPC, are they basic or heroic?\n")
+                    print(f"{self.name} is an NPC, are they basic or heroic?\n")
                     NPC_type = input().lower()
                     self.value = NPCValue(self.cr, NPC_type)
 

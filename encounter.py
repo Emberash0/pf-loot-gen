@@ -7,7 +7,7 @@ def FindRow(item, file):
     raise ValueError(f"'{item}' is an invalid creature type")
 
 class Encounter:
-    def __init__(self, creatures: list):
+    def __init__(self, creatures):
         self.creatures = creatures
         total_xp = 0
         total_val = 0
@@ -34,7 +34,6 @@ class Encounter:
         self.xp = total_xp
         self.value = total_val
         self.types = types
-        
     
     def __repr__(self):
         return f"An encounter worth {self.xp}XP rewarding treasure equal to {self.value} gp. Treasure is of the following types: {self.types}\n"

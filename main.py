@@ -1,13 +1,12 @@
 import sys
-from console import EncounterArgs
 from encounter import Encounter
+from console import EncounterArgs
 
 #Main working loop. 
 def main():
     #Handles cases for each type of input arguments
-    creatures = EncounterArgs(sys.argv)
+    creatures, output = EncounterArgs(sys.argv)
     encounter = Encounter(creatures)
-    print(encounter)
-    return
+    print(output, encounter)
 
 main()
