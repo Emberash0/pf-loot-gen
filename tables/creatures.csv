@@ -1,5 +1,5 @@
 ﻿Creature,Type,CR,Treasure,XP,NPC Gear
-aasimar,NPC,1/2,NPC,200,"scale mail, heavy mace, light crossbow, crossbow bolts (10), other"
+aasimar,outsider,1/2,NPC,200,"scale mail, heavy mace, light crossbow, crossbow bolts (10), other"
 aboleth,aberration,7,double,3200,other
 astral deva,outsider,14,double,38400,"+2 disrupting warhammer, other"
 planetar,outsider,16,double,76800,"+3 holy greatsword, other"
@@ -32,8 +32,8 @@ behir,magical beast,8,double,4800,other
 black pudding,ooze,7,none,3200,
 boar,animal,2,none,600,
 daeodon,animal,4,none,1200,
-boggard,NPC,2,NPC,600,"leather armour, morningstar, other"
-bugbear,NPC,2,NPC,600,"leather armour, light wooden shield, morningstar, javelins (3), other"
+boggard,monstrous humanoid,2,NPC,600,"leather armour, morningstar, other"
+bugbear,monstrous humanoid,2,NPC,600,"leather armour, light wooden shield, morningstar, javelins (3), other"
 bulette,magical beast,7,none,3200,
 cheetah,animal,2,none,600,
 leopard,animal,2,none,600,
@@ -53,7 +53,7 @@ crocodile,animal,2,none,600,
 dire crocodile,animal,9,none,6400,
 cyclops,humanoid,5,standard,1600,"hide armour, Large greataxe, Large heavy crossbow, other"
 dark creeper,humanoid,2,standard,600,"dagger, black smear poison [3 doses], other"
-dark stalker,NPC,4,NPC,1200,"leather armour, short sword (2), black smear poison [6 doses], other"
+dark stalker,humanoid,4,NPC,1200,"leather armour, short sword (2), black smear poison [6 doses], other"
 darkmantle,magical beast,1,none,400,
 babau,outsider,6,standard,2400,"longspear, other"
 balor,outsider,20,standard,307200,"+1 unholy longsword, +1 flaming whip, other"
@@ -67,7 +67,7 @@ quasit,outsider,2,standard,600,other
 shadow demon,outsider,7,standard,3200,other
 succubus,outsider,7,double,3200,other
 vrock,outsider,9,standard,6400,other
-derro,NPC,3,NPC,800,"leather armour, short sword, repeating light crossbow, poisoned crossbow bolts (10), other"
+derro,humanoid,3,NPC,800,"leather armour, short sword, repeating light crossbow, poisoned crossbow bolts (10), other"
 hamatula,outsider,11,standard,12800,other
 barbazu,outsider,5,standard,1600,"glaive, other"
 osyluth,outsider,9,standard,6400,other
@@ -90,7 +90,7 @@ dog,animal,1/3,none,135,
 riding dog,animal,1,none,400,
 dolphin,animal,1/2,none,200,
 orca,animal,5,none,1600,
-doppelganger,NPC,3,NPC,800,other
+doppelganger,monstrous humanoid,3,NPC,800,other
 black dragon,dragon,3,triple,800,dragon
 blue dragon,dragon,5,triple,1600,dragon
 green dragon,dragon,4,triple,1200,dragon
@@ -103,18 +103,18 @@ gold dragon,dragon,7,triple,3200,dragon
 silver dragon,dragon,6,triple,2400,dragon
 dragon turtle,dragon,9,double,6400,other
 drider,aberration,7,double,3200,"masterwork heavy mace, masterwork composite longbow [+2 Str bonus], arrows (20), other"
-deep elf,NPC,1/3,NPC,135,"leather armour, light steel shield, rapier, hand crossbow, crossbow bolts (20), deep elf poison [2 doses], 3d6 gp, other"
-drow noble,NPC,3,NPC,800,"masterwork breastplate, heavy steel shield, masterwork rapier, deep elf poison [4 doses], potion of invisibility, wand of cure light wounds [CL 1, 20 charges], 400 gp, other"
+deep elf,humanoid,1/3,NPC,135,"leather armour, light steel shield, rapier, hand crossbow, crossbow bolts (20), deep elf poison [2 doses], 3d6 gp, other"
+drow noble,humanoid,3,NPC,800,"masterwork breastplate, heavy steel shield, masterwork rapier, deep elf poison [4 doses], potion of invisibility, wand of cure light wounds [CL 1, 20 charges], 400 gp, other"
 dryad,fey,3,standard,800,"dagger, masterwork longbow, arrows (20), other"
-duergar,NPC,1/3,NPC,135,"chainmail, heavy steel shield, warhammer, light crossbow, crossbow bolts (20), 3d6 gp, other"
+duergar,humanoid,1/3,NPC,135,"chainmail, heavy steel shield, warhammer, light crossbow, crossbow bolts (20), 3d6 gp, other"
 eagle,animal,1/2,none,200,
 giant eagle,animal,3,none,800,
 electric eel,animal,2,none,600,
 moray eel,animal,5,none,1600,
-air elemental,elemental,1,none,400,elemental
-earth elemental,elemental,1,none,400,elemental
-fire elemental,elemental,1,none,400,elemental
-water elemental,elemental,1,none,400,elemental
+air elemental,outsider,1,none,400,elemental
+earth elemental,outsider,1,none,400,elemental
+fire elemental,outsider,1,none,400,elemental
+water elemental,outsider,1,none,400,elemental
 elephant,animal,7,none,3200,
 mastodon,animal,9,none,6400,
 ettercap,aberration,3,standard,800,other

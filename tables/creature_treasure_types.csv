@@ -1,0 +1,14 @@
+﻿type,treasure,option,optional treasure
+aberration,ABDE,cunning,FGH
+animal,ABDE,,
+construct,EF,guarding treasure,BCH
+dragon,ABCHI,,
+fey,BCDG,,
+humanoid,ABDEFG,an entire community,H
+magical beast,ABDE,,
+monstrous humanoid,ABCDEH,,
+ooze,ABD,,
+outsider,ABCDEFGHI,,
+plant,ABDE,,
+undead,ABDE,intelligent,FG
+vermin,ABD,,

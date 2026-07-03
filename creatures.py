@@ -33,6 +33,12 @@ def CalcValue(xp, pace = "medium"):
 
 def NPCValue(CR, NPC_type = "basic"):
     treasure_lookup = ReadTable("NPC_Treasure.csv", "c")
+    if CR < 0:
+        match NPC_type:
+            case "heroic":
+                return 260
+            case default:
+                return 130
     cr_list = treasure_lookup[0]
     hero_list = treasure_lookup[1]
     gp_list = treasure_lookup[2]
@@ -146,7 +152,7 @@ class Creature:
                     self.value = NPCValue(self.cr, NPC_type)
 
     def __repr__(self) -> str:
-        return f"Creature({self.name}, {self.quantity}, CR{self.cr}, {self.xp}XP, dropping treasure equivalent to {self.value} gp)"
+        return f"Creature({self.name}, {self.quantity}, CR{self.cr}, {self.xp}XP, dropping treasure equivalent to {self.value} gp, {self.type})"
 
 class LookupCreature(Creature):
     def __init__(self, name: str, type: str, cr: str, treasure: str, xp: int, treasure_default: list[str]) -> None:
