@@ -1,11 +1,16 @@
 from fileProcessor import ReadTable
 
+#returns the row associated with a creature type
 def FindRow(item, file):
     for row in file:
         if row[0] == item:
             return file.index(row)
     raise ValueError(f"'{item}' is an invalid creature type")
 
+#Creates an object for the whole encounter containing:
+#- List of creature objects
+#- total xp and treasure budget
+#- a set of letters corresponding to the available treasure types from the creatures encountered
 class Encounter:
     def __init__(self, creatures):
         self.creatures = creatures
