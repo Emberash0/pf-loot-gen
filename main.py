@@ -19,7 +19,15 @@ def main():
     #Main Generation Process
     print("Generating loot...")
     loot.PopulateLoot()
-    print("\n------ Loot Gen Finished. Printing Output...------")
-    print(loot)
+    
+    print("\n------Loot Gen Procedure Complete------")
+    if output[0]:
+        print("\nPrinting Output to console...")
+        print(loot)
+    else:
+        output_dest = "output/" + output[1]
+        print(f"Writing output to {output_dest}...")
+        with open(output_dest, "w") as f:
+            f.write(repr(loot))
 
 main()

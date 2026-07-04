@@ -59,6 +59,7 @@ class LootObject:
                     self.options.remove("H")
                     num_options = len(self.options) - 1
                     self.treasure_type = self.options[randint(0, num_options)]
+            print("")
         else:
             num_options = len(self.options) - 1
             self.treasure_type = self.options[randint(0, num_options)]

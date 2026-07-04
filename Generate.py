@@ -8,7 +8,9 @@ def A(budget):
     #Grabs lookup table and designates working bin
     coins_table = ReadTable("coins-table.csv", "c")
     roll_index = FindBinIndex(budget, coins_table[0])
-    print(f"\nGenerating coins with approx budget of {coins_table[0][roll_index]} gp...")
+    print(
+        f"Generating Coins with approx budget of {coins_table[0][roll_index]} gp..."
+    )
 
     #creates empty objects
     coins = []
@@ -34,7 +36,7 @@ def B(budget):
     coins = []
     gems = GemsObject([])
     print(
-        f"\nGenerating Gems and Coins with approx budget of {gems_table[0][roll_index]} gp..."
+        f"Generating Gems and Coins with approx budget of {gems_table[0][roll_index]} gp..."
     )
 
     #Generates coin loot
