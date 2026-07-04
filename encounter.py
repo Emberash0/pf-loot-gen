@@ -36,5 +36,5 @@ class Encounter:
         self.types = types
     
     def __repr__(self):
-        return f"An encounter worth {self.xp}XP rewarding treasure equal to {self.value} gp. Treasure is of the following types: {self.types}\n"
+        return f"An encounter worth {self.xp}XP rewarding treasure equal to {self.value} gp. Treasure is of the following types: {self.types}"
 

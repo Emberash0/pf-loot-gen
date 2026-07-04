@@ -10,6 +10,8 @@ def FindBinIndex(value, list):
             return index
         if value < check_val:
             return index - 1
+        if value > check_val and index == len(list) - 1:
+            return index
         index += 1
 
 def CalcValue(xp, pace = "medium"):

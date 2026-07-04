@@ -48,7 +48,6 @@ def EncounterArgs(input):
     elif args.verboseinput != None:
         creature = args.verboseinput
         creature_tuple = [x.strip() for x in creature.split(",")]
-        print(creature_tuple)
         if len(creature_tuple) == 1:
             creature_quantity = 1
             creature_name = creature_tuple[0]

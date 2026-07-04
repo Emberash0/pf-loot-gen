@@ -8,14 +8,14 @@ def ReadTable(file_name: str, l_or_c: str = "l") -> list:
     else:
         result = []
         num_columns = len(file_rows[0].split(","))
-        for i in range(num_columns):
-            column = []
-            for j in range(len(file_rows)):
-                file_row = file_rows[j].split(",")
-                if file_row == [""]:
-                    break
-                column.append(file_row[i])
-            result.append(column)
+        for _ in range(num_columns):
+            result.append([])
+        for row in file_rows:
+            if row == "":
+                break
+            file_row = [x.strip(' "') for x in row.split(',')]
+            for column in range(num_columns):
+                result[column].append(file_row[column])
         return result
 
 def ReadFile(file_name: str) -> list:
